@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p>{{ title }}</p>
+    <h1>{{ title }}</h1>
     <input type="text" v-model="title" />
   </div>
 </template>
@@ -13,12 +13,11 @@ export default {
     msg: {
       type: String,
     },
-    data() {
-      return {
-        //This part is broken
-        title: String,
-      };
-    },
+  },
+  data() {
+    return {
+      title: "",
+    };
   },
 };
 </script>
