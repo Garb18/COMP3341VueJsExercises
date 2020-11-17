@@ -15,6 +15,7 @@ export default {
     },
     data() {
       return {
+        //This part is broken
         title: String,
       };
     },
