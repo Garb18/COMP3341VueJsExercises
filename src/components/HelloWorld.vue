@@ -3,6 +3,10 @@
     <h1>{{ msg }}</h1>
     <h1>{{ title }}</h1>
     <input type="text" v-model="title" />
+    <br />
+    <p v-if="show">You can see me!</p>
+    <p v-show="show">You can see me using SHOW</p>
+    <button @click="show = !show">Toggle Show</button>
   </div>
 </template>
 
@@ -17,6 +21,7 @@ export default {
   data() {
     return {
       title: "",
+      show: true,
     };
   },
 };
